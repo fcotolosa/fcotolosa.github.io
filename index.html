@@ -1,1 +1,44 @@
-<h1>My new web page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <style>
+        body {
+            background-color: #23b9eb; /* Azul claro */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        .upload-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Francisco Tolosa</h1>
+    <img id="profilePicture" class="profile-pic" src="link.jpg" alt="Foto de perfil">
+    <div class="upload-btn">
+        <input type="file" id="uploadInput" accept="image/*" onchange="loadProfilePicture(event)">
+    </div>
+
+    <script>
+        function loadProfilePicture(event) {
+            const profilePic = document.getElementById('profilePicture');
+            profilePic.src = URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>
+
