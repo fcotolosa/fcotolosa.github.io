@@ -14,6 +14,9 @@
         h1 {
             color: #333;
         }
+        h1 span {
+            display: block;
+        }
         .profile-pic {
             width: 150px;
             height: 150px;
@@ -27,7 +30,10 @@
     </style>
 </head>
 <body>
-    <h1>Francisco Tolosa - Portfolio</h1>
+    <h1>
+        <span>Portfolio</span>
+        <span>Francisco Tolosa</span>
+    </h1>
     <img id="profilePicture" class="profile-pic" src="link.jpg" alt="Profile picture">
     <div class="upload-btn">
         <input type="file" id="uploadInput" accept="image/*" onchange="loadProfilePicture(event)">
@@ -41,5 +47,6 @@
     </script>
 </body>
 </html>
+
 
 
