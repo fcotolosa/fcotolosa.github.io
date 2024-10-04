@@ -3,105 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Diagonal Gradient Background</title>
     <style>
         body {
-            background-color: #f0f0f0;
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #d3d3d3, #ffffff);
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        .tab {
-            display: inline-block;
-            margin: 10px 5px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .tab:hover {
-            background-color: #45a049;
-        }
-        .tabcontent {
-            display: none;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .tabcontent iframe {
-            width: 80%;
-            height: 600px;
-            border: none;
-        }
-        .back-btn {
-            margin-top: 30px;
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .back-btn:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-
-    <h1>Projects</h1>
-
-    <!-- Botones para cada proyecto -->
-    <button class="tab" onclick="openProject(event, 'Project1')">Project 1</button>
-    <button class="tab" onclick="openProject(event, 'Project2')">Project 2</button>
-    <button class="tab" onclick="openProject(event, 'Project3')">Project 3</button>
-
-    <!-- Contenido de cada proyecto -->
-    <div id="Project1" class="tabcontent">
-        <h2>Project 1 - PDF</h2>
-        <iframe src="project1.pdf"></iframe>
-    </div>
-
-    <div id="Project2" class="tabcontent">
-        <h2>Project 2 - Word Document</h2>
-        <iframe src="project2.docx"></iframe>
-    </div>
-
-    <div id="Project3" class="tabcontent">
-        <h2>Project 3 - PowerPoint</h2>
-        <iframe src="project3.pptx"></iframe>
-    </div>
-
-    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
-
-    <script>
-        // Función para abrir el contenido de un proyecto
-        function openProject(evt, projectName) {
-            var i, tabcontent, tab;
-
-            // Ocultar todos los contenidos de proyectos
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Remover el color activo de todos los botones
-            tab = document.getElementsByClassName("tab");
-            for (i = 0; i < tab.length; i++) {
-                tab[i].style.backgroundColor = "#4CAF50";
-            }
-
-            // Mostrar el contenido del proyecto seleccionado
-            document.getElementById(projectName).style.display = "block";
-
-            // Cambiar el color del botón activo
-            evt.currentTarget.style.backgroundColor = "#45a049";
-        }
-    </script>
 </body>
 </html>
