@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Projects</title>
     <style>
         body {
-            background-color: #3270f5c8; /* Light blue */
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             text-align: center;
             padding-top: 50px;
@@ -14,38 +14,44 @@
         h1 {
             color: #333;
         }
-        h1 span {
+        .project-list {
+            margin-top: 30px;
+        }
+        .project-list a {
             display: block;
+            color: #3270f5;
+            font-size: 18px;
+            margin: 10px 0;
+            text-decoration: none;
         }
-        .upload-btn, .action-buttons {
-            margin-top: 20px;
+        .project-list a:hover {
+            text-decoration: underline;
         }
-        .action-buttons button {
+        .back-btn {
+            margin-top: 30px;
             background-color: #4CAF50;
             border: none;
             color: white;
             padding: 10px 20px;
-            text-align: center;
             font-size: 16px;
-            margin: 5px;
             border-radius: 5px;
             cursor: pointer;
         }
-        .action-buttons button:hover {
+        .back-btn:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>
-        <span>Portfolio</span>
-        <span>Francisco Tolosa</span>
-    </h1>
+    <h1>Projects</h1>
 
-    <div class="action-buttons">
-        <button onclick="window.location.href='projects.html'">Projects</button>
-        <button onclick="window.location.href='resume.html'">Resume</button>
+    <div class="project-list">
+        <a href="project1.pdf" target="_blank">Project 1 - PDF</a>
+        <a href="project2.docx" target="_blank">Project 2 - Word Document</a>
+        <a href="project3.pptx" target="_blank">Project 3 - PowerPoint</a>
+        <!-- Puedes agregar más proyectos aquí -->
     </div>
 
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
 </body>
 </html>
