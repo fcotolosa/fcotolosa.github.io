@@ -17,13 +17,6 @@
         h1 span {
             display: block;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 20px;
-        }
         .upload-btn, .action-buttons {
             margin-top: 20px;
         }
@@ -48,26 +41,11 @@
         <span>Portfolio</span>
         <span>Francisco Tolosa</span>
     </h1>
-    <img id="profilePicture" class="profile-pic" src="link.jpg" alt="Profile picture">
-    
-    <div class="upload-btn">
-        <input type="file" id="uploadInput" accept="image/*" onchange="loadProfilePicture(event)">
-    </div>
 
     <div class="action-buttons">
         <button onclick="window.location.href='projects.html'">Projects</button>
         <button onclick="window.location.href='resume.html'">Resume</button>
     </div>
 
-    <script>
-        function loadProfilePicture(event) {
-            const profilePic = document.getElementById('profilePicture');
-            profilePic.src = URL.createObjectURL(event.target.files[0]);
-        }
-    </script>
 </body>
 </html>
-
-
-
-
