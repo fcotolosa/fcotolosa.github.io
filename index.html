@@ -24,8 +24,22 @@
             object-fit: cover;
             margin-top: 20px;
         }
-        .upload-btn {
+        .upload-btn, .action-buttons {
             margin-top: 20px;
+        }
+        .action-buttons button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .action-buttons button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -35,8 +49,14 @@
         <span>Francisco Tolosa</span>
     </h1>
     <img id="profilePicture" class="profile-pic" src="link.jpg" alt="Profile picture">
+    
     <div class="upload-btn">
         <input type="file" id="uploadInput" accept="image/*" onchange="loadProfilePicture(event)">
+    </div>
+
+    <div class="action-buttons">
+        <button onclick="window.location.href='projects.html'">Projects</button>
+        <button onclick="window.location.href='resume.html'">Resume</button>
     </div>
 
     <script>
@@ -47,6 +67,7 @@
     </script>
 </body>
 </html>
+
 
 
 
