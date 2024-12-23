@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="photo.jpg"> <!--to add an icon in the tab--->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./port.js" defer></script>
+  </head>
+
+  <body>
+    <!-- botones del menú principal -->
+    <div class="HOME">
+        <p data-target="#HOME">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+        </p>
+    </div>
+    <div class="MENU">
+        <p data-target="#ABOUTME">ABOUT ME</p>
+        <p data-target="#RESUME">RESUME</p>
+        <p data-target="#PROJECTS">PROJECTS</p>
+    </div>
+
+    <!-- contenido de cada boton principal -->
+    <div class="CONTENT">
+        <div data-content id="HOME" class="active">
+            <img src="img/photo.jpg" alt="Profile picture" class="Img_profile"/>
+            <h1>Hi, I'm Francisco Tolosa</h1>
+          
+            <h3>Data analyst // Bachelor of Business // Business Administrator</h3>  
+           
+            <p style="text-align: justify;">
+                I have fulfilled functions such as Product manager, Head of operational management, and planner and dispatcher.
+                In these roles I have learned to: analyze databases, create products, market analysis, improve processes, planning and control of KPI compliance, train, lead and motivate work teams and customer experience. Currently studying Management and Leadership - SAIT
+            </p>
+
+          <ul>
+            <a class="SocialMediaButton" href="https://github.com/fcotolosa" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+                Github
+            </a>  
+            <a class="SocialMediaButton" href="https://www.linkedin.com/in/francisco-tolosa" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+                LinkedIn
+            </a> 
+            <a class="SocialMediaButton" href="#">
+                <label for="toggle-contact" style="cursor: pointer;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                  </svg>
+                  Contact Me
+                </label>
+              </a>
+              
+              <!-- Input checkbox oculto -->
+              <input type="checkbox" id="toggle-contact" style="display: none;">
+              
+              <!-- Datos de Contacto -->
+              <div id="contact-info" class="contact-tab">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                  </svg>
+                  franciscojosetolosa@hotmail.com
+                </p>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                  </svg>
+                  +1 (368) 8875920
+                </p>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  Calgary, Alberta
+                </p>
+              </div>
+          </ul>
+                            <!-- timeline -->
+
+            <h2 class="timeline-title">TIMELINE</h2>
+            <div class ="timeline">
+                <div class ="container_tl left">
+                    <img src="img/Wetaskiwin.png" alt="Wetaskiwin" class="company-img" />
+                    <div class ="text-box">
+                        <h2>City of Wetaskiwin</h2>
+                        <small>2024 - to date</small>
+                        <li>Data Analyst (Contract)</li>
+                        <span class="left-arrow"></span>
+                    </div>
+
+                </div> 
+
+                <div class ="container_tl right">
+                <img src="img/sait.png" alt="SAIT" class="company-img" />
+                <div class ="text-box">
+                    <h2>SAIT</h2>
+                    <small>2024 - to Date</small>
+                    <li>Data Analytics and Management and Leadership</li>
+                    <span class="right-arrow"></span>
+                </div>
+
+                </div> 
+
+                <div class ="container_tl left">
+                    <img src="img/metrogas.png" alt="Metrogas" class="company-img" />
+                    <div class ="text-box">
+                        <h2>Metrogas</h2>
+                        <small>2017 - 2023</small>
+                        <li>Operation Manager</li>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+
+                <div class ="container_tl right">
+                    <img src="img/uc.png" alt="Catolica" class="company-img"/>
+                    <div class ="text-box">
+                        <h2>Pontifical Catholic University of Chile</h2>
+                        <small>2022 - 2022</small>
+                        <li>Organizational Leadership Skills</li>
+                        <span class="right-arrow"></span>
+                    </div>
+        
+                </div> 
+                
+                <div class ="container_tl left">
+                    <img src="img/achs.png" alt="ACHS" class="company-img" />
+                    <div class ="text-box">
+                        <h2>Chilean Association of Security (ACHS)</h2>
+                        <small>2015 - 2017</small>
+                        <li>Chief Operating Officer</li>
+                        <span class="left-arrow"></span>
+                    </div>
+
+                </div> 
+
+                <div class ="container_tl right">
+                <img src="img/utalca.png" alt="Utalca" class="company-img" />
+                <div class ="text-box">
+                    <h2>University of Talca</h2>
+                    <small>2005 - 2010</small>
+                    <li>Bachelor of Business Administration</li>
+                    <span class="right-arrow"></span>
+                </div>
+
+                </div> 
+
+            </div> 
+        </div>
+
+        <div data-content id="ABOUTME">
+
+            <!-- Personality Traits -->
+            
+                        <div class="grid-container">
+                <div class="content-box" onclick="toggleExpand(this)">
+                    <h2>Blending Leadership and Analytical Thinking</h2>
+                    <p>
+                        My personality leans strongly toward action and problem-solving. I thrive in environments where strategic decisions and collaboration are essential. Leading teams of up to 35 people, managing complex projects like the annual installation of 50 kilometers of natural gas pipelines, and controlling budgets of approximately 8 million CAD have earned me recognitions such as "Chief Performance" at Metrogas in 2020 and 2021. These achievements reflect my focus on efficiency, communication, and long-term impact.
+                    </p>
+                </div>
+                <div class="content-box" onclick="toggleExpand(this)">
+                    <h2>Intuition Meets Judgement in Problem-Solving</h2>
+                    <p>
+                        I excel at identifying opportunities and structuring solutions, with a strong focus on the details that make a difference when defining solutions. My transition into data analytics is a testament to this, as I’ve embraced tools like Python, Power BI, VS Code, and Excel to uncover insights that drive smarter decisions. At Peace Hills Utilities Inc., I designed systems to optimize water resource management while creating clear, accessible tools for stakeholders. My ability to maintain focus and deliver under pressure aligns with the "Urgency Sense" recognition I received at ACHS in 2016.
+                    </p>
+                </div>
+                <div class="content-box" onclick="toggleExpand(this)">
+                    <h2>An Assertive Approach to Collaboration</h2>
+                    <p>
+                        I approach teamwork with confidence and adaptability. For me, working in a team means understanding that you are part of a group and have a role to fulfill, especially in high-risk situations like working with natural gas. Creating detailed handbooks for corporate stakeholders and volunteering at the Calgary Food Bank are just two examples of how I foster productive environments and achieve shared goals. My contributions have consistently been acknowledged, including the "Recognition of Excellence" award from Los Andes Compensation Fund in 2013.
+                    </p>
+                </div>
+                <div class="content-box" onclick="toggleExpand(this)">
+                    <h2>Growth-Oriented and Strategic Mindset</h2>
+                    <p>
+                        My professional journey reflects a balance between leadership and continuous learning. Studying Management and Leadership at SAIT and developing skills in my country of origin have enriched my ability to link technical expertise with organizational strategy, ensuring I remain at the forefront of impactful solutions.
+                    </p>
+                </div>
+                <div class="content-box" onclick="toggleExpand(this)">
+                    <h2>What Drives Me</h2>
+                    <p>
+                        I see challenges as stepping stones to growth and innovation. My values—empathy, integrity, and resilience—guide my decisions and interactions, helping me maintain focus under pressure, deliver detailed work, and inspire collaboration. Beyond work, I enjoy connecting with Calgary’s vibrant community through volunteering and festivals, always drawing inspiration to fuel creativity and purpose.
+                    </p>
+                </div>
+            </div>
+        
+            <section class="table-container">
+                <h2>Strengths & Weaknesses</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Strengths</th>
+                            <th>Weaknesses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Self-Improvement</td>
+                            <td>Constantly seeking ways to enhance skills and knowledge.</td>
+                            <td>Overlooking emotional well-being in growth.</td>
+                        </tr>
+                        <tr>
+                            <td>Logical Approach</td>
+                            <td>Your logical approach helps tackle personal challenges head-on.</td>
+                            <td>High standards leading to unnecessary stress.</td>
+                        </tr>
+                        <tr>
+                            <td>Goal-Oriented</td>
+                            <td>Set clear objectives for personal development and pursue them relentlessly.</td>
+                            <td>Avoiding self-reflection and deeper emotions.</td>
+                        </tr>
+                        <tr>
+                            <td>Leadership & Vision</td>
+                            <td>Charisma and confidence inspire others (natural leadership). Strategic vision for long-term planning.</td>
+                            <td>Overlooking others' feelings in pursuit of results.</td>
+                        </tr>
+                        <tr>
+                            <td>Ambition & Confidence</td>
+                            <td>Determination and work ethic drive success. Self-confidence to stand up for beliefs.</td>
+                            <td>Work-life imbalance prioritizing achievement over personal life.</td>
+                        </tr>
+                        <tr>
+                            <td>Team Collaboration</td>
+                            <td>Confidence and adaptability in working with others.</td>
+                            <td>Perfectionism leading to stress and burnout.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+                <!-- Traits Progress Bars -->
+            <div class="progress-container">
+                <h2>Personality</h2> 
+                
+                <!-- Mind: Extraverted -->
+                <div class="trait">
+                    <p>Energy: <span class="percentage">74%</span> <strong>Extraverted</strong></p>
+                    <div class="progress-labels">
+                        <span class="label-left">Introverted</span>
+                        <div class="progress-bar">
+                            <div class="progress extraverted" style="width: 74%;"></div>
+                        </div>
+                        <span class="label-right">Extraverted</span>
+                    </div>
+                </div>
+                
+        
+                <!-- Mind: Intuitive -->
+                <div class="trait">
+                    <p>Mind: <span class="percentage">68%</span> <strong>Intuitive</strong></p>
+                    <div class="progress-labels">
+                        <span class="label-left">Observant</span>
+                        <div class="progress-bar">
+                            <div class="progress intuitive" style="width: 68%;"></div>
+                        </div>
+                        <span class="label-right">Intuitive</span>
+                    </div>
+                </div>
+        
+                <!-- Nature: Thinking -->
+                <div class="trait">
+                    <p>Nature: <span class="percentage">85%</span> <strong>Thinking</strong></p>
+                    <div class="progress-labels">
+                        <span class="label-left">Feeling</span>
+                        <div class="progress-bar">
+                            <div class="progress thinking" style="width: 85%;"></div>
+                        </div>
+                        <span class="label-right">Thinking</span>
+                    </div>
+                </div>
+        
+                <!-- Tactics: Judging -->
+                <div class="trait">
+                    <p>Tactics: <span class="percentage">65%</span> <strong>Judging</strong></p>
+                    <div class="progress-labels">
+                        <span class="label-left">Prospecting</span>
+                        <div class="progress-bar">
+                            <div class="progress judging" style="width: 65%;"></div>
+                        </div>
+                        <span class="label-right">Judging</span>
+                    </div>
+                </div>
+        
+                <!-- Identity: Assertive -->
+                <div class="trait">
+                    <p>Identity: <span class="percentage">79%</span> <strong>Assertive</strong></p>
+                    <div class="progress-labels">
+                        <span class="label-left">Turbulent</span>
+                        <div class="progress-bar">
+                            <div class="progress assertive" style="width: 79%;"></div>
+                        </div>
+                        <span class="label-right">Assertive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curriculum Vitae Contenido -->
+        <div data-content id="RESUME" class="CV">
+            <iframe src="resume.pdf#zoom=108" width="900" height="1050"></iframe>
+        </div>
+
+        <!-- Botones de cada proyecto -->
+        <div data-content id="PROJECTS">
+            <div class="PROJECTS">
+                <div data-target="#RSTUDIO">
+                    <div class="R" id="R">
+                        <h2>Rstudio</h2>
+                        <img src="img/Rstudio.png" alt="Description of the image" style="width:100px; height:auto;"> <!-- Ajusta el tamaño según sea necesario -->
+                        <h3>An integrated development environment for R programming language.</h3>
+                    </div>
+                </div>
+                <div data-target="#PYTHON">
+                    <div class="Python" id="Python">
+                        <h2>Python</h2>
+                        <img src="img/python.png" alt="Python Image" style="width:100px; height:auto;"> <!-- Ajusta el tamaño según sea necesario -->
+                        <h3>All the projects were developed using VS Code 
+                            <img src="https://img.icons8.com/?size=100&id=0OQR1FYCuA9f&format=png&color=000000" alt="Python Icon" style="width:20px;height:20px;"> 
+                            as it provides a robust environment for Python development.
+                        </h3>
+                    </div>
+                </div>
+                <div data-target="#PBI">
+                    <div class="pbi" id="pbi">
+                        <h2>Power BI</h2>
+                        <img src="img/pbi.png" alt="Power BI Image" style="width:100px; height:auto;"> <!-- Ajusta el tamaño según sea necesario -->
+                        <h3>Data visualization (Dashboards) and data analysis projects.</h3>
+                    </div>
+                </div>
+                <div data-target="#CANVA">
+                    <div class="Canva" id="Canva">
+                        <h2>Canva</h2>
+                        <img src="img/canva.png" alt="Canva Image" style="width:100px; height:auto;"> <!-- Ajusta el tamaño según sea necesario -->
+                        <h3>An intuitive interface that enables people outside the graphic design field to create professional documents.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contenido de cada proyecto -->
+        <div data-content id="RSTUDIO">
+            <div class="tabs">
+                <button class="tab-link" onclick="openTab(event, 'proyecto1')">PROJECT 1</button>
+                <button class="tab-link" onclick="openTab(event, 'proyecto2')">PROJECT 2</button>
+                <button class="tab-link" onclick="openTab(event, 'proyecto3')">PROJECT 3</button>
+                <button class="tab-link" onclick="openTab(event, 'proyecto4')">PROJECT 4</button>
+            </div>
+            <p><strong>RStudio</strong></p>
+            <div id="proyecto1" class="active tab-content">
+                <section id="rstudio_1">
+                    <h2>Data Analysis and Geographic Visualization</h2>
+                    
+                    <p><strong>Project Description:</strong></p>
+                    <p>
+                        This model focuses on analyzing and visualizing salary data and minimum wage trends in the United States. The input data includes individual salaries with features such as years of experience, education level, department, and geographic information. The analysis involves cleaning missing data, generating summary statistics, and creating interactive visualizations. Scatter plots and bar charts are used to explore salary patterns based on experience and education, while choropleth maps display minimum wage distribution across states over time. The model serves to uncover trends, provide insights for policy-making, and assist in decision-making processes related to compensation and wage regulations.
+                    </p>
+            
+                    <div class="map-container">
+                        <a href="http://localhost:12687/session/viewhtml5444537932f6/index.html" target="_blank" class="map-link">
+                            <img src="img/map.png" alt="Map" class="map-image">
+                        </a>
+                    </div>      
+
+                </section>
+            </div>
+        
+            <div id="proyecto2" class="tab-content">
+                <h2>FORECAST Crime Prediction Model</h2>
+                <p>This model is a time series forecasting model built using the SARIMA (Seasonal Autoregressive Integrated Moving Average) technique. It uses crime data, specifically the number of crime incidents reported in Calgary, aggregated by year and month. The input data includes crime count and date, which are processed into a time series format. The model predicts future crime rates for the next 12 months by analyzing historical crime data. The SARIMA model is applied to account for both seasonality and trends in the data, making it useful for predicting crime patterns over time. This model serves as a tool for forecasting crime and assisting in resource allocation and policy-making related to public safety.</p>
+                <img src="img/fore.png" alt="forecast" class="forecast-image">
+                <p><strong>SARIMA (Seasonal Autoregressive Integrated Moving Average) model</strong></p>
+                <p>The SARIMA model applies these statistical methods to detect patterns, trends, and seasonality in the historical crime data, enabling the prediction of future criminal activity in Calgary. Additionally, the auto.arima algorithm is used to automatically fit the model to the data, optimizing statistical parameters to improve the accuracy of predictions.</p>
+                <img src="img/timeserie.png" alt="timeserie" class="timeserie-image">
+            </div>
+        
+            <div id="proyecto3" class="tab-content">
+                <h2>Decision Tree Model for Music Genre Prediction</h2>
+                <p>This project utilizes a Decision Tree Model to predict the music genre a person might prefer based on specific user characteristics such as age and gender. The model is trained on a dataset (<code>music.csv</code>) where the target variable is <code>genre</code>, and the input variables (features) include demographic and user-specific attributes. The decision tree algorithm analyzes patterns and relationships within the data to create decision rules that classify users into different genres. This type of model is useful for applications in personalized recommendations, helping music platforms or services suggest content tailored to individual preferences based on user data.</p>
+                <img src="img/tree.png" alt="tree" class="tree-image">
+                        
+            </div>
+
+            <div id="proyecto4" class="tab-content">
+                <h2>K-Means Clustering Model </h2>
+                <p>The K-Means clustering model is used to group data into clusters based on similarity. In this project, it was applied to a dataset of mammal sleep patterns, focusing on total sleep time (<code>sleep_total</code>) and REM sleep (<code>sleep_rem</code>). Missing REM sleep values were replaced with the average. The model divides the data into 4 clusters, identifying patterns in sleep behavior among mammals. The output includes the centroids of each cluster and a visualization that shows how the data points are grouped, helping to interpret sleep patterns across species.</p>
+                <img src="img/cluster.png" alt="cluster" class="forecast-image">
+                        
+            </div>
+        </div>
+
+        <!-- Contenido de PYTHON -->
+        <div data-content id="PYTHON">
+            <div class="tabs">
+                <button class="tab-link" onclick="openTab(event, 'python1')">PROJECT 1</button>
+                <button class="tab-link" onclick="openTab(event, 'python2')">PROJECT 2</button>
+                <button class="tab-link" onclick="openTab(event, 'python3')">PROJECT 3</button>
+                <button class="tab-link" onclick="openTab(event, 'python4')">PROJECT 4</button>
+                <button class="tab-link" onclick="openTab(event, 'python5')">PROJECT 5</button>
+            </div>
+            <p><strong>Python</strong></p>
+            <div id="python1" class="active tab-content">
+                <h2>Prediction Model: Neural Network-Based Classification</h2>
+                <p>This classification model employs deep neural networks to identify and categorize images of various plant species. It requires a labeled dataset as input, containing plant images and their respective categories. The model predicts the most likely class for a new image based on features learned during training. It is designed to automate plant species identification, supporting applications in agriculture, botany, and environmental conservation. The model's accuracy depends on the quality of the dataset and the fine-tuning of its parameters.</p>
+                <p>These two images represent key tools for evaluating a classification model after fine-tuning. Here's what they represent:</p>
+                <p><strong>Confusion Matrix:</strong></p>
+                <p>A table summarizing the model's performance in classifying instances into categories. Rows represent the actual classes, while columns represent the predicted classes. Diagonal values indicate correct predictions (where actual and predicted classes match), and off-diagonal values represent model errors. It helps identify patterns of confusion between specific classes and assess overall accuracy.</p>
+                <img src="img/matrix.png" alt="matrix" class="matrix-image" style="width: 80%; height: 80%;">
+                <p><strong>Top Losses Plot:</strong></p>
+                <p>This visualization highlights the instances where the model made the most significant errors (highest loss). Typically, it displays misclassified examples along with their actual and predicted labels. It is useful for diagnosing model issues, such as confusion between similar classes or a lack of representative data for certain categories.</p>
+                <img src="img/loss.png" alt="loss" class="matrix-image" style="width: 80%; height: 80%;">
+                <p>Both visualizations are complementary tools that help better understand the model's performance and guide further adjustments to improve accuracy.</p>
+            </div>
+
+            <div id="python2" class="tab-content">
+                <h2>Prediction Model: Seed Classification Using K-Means Clustering</h2>
+                <p>This prediction model utilizes K-Means clustering to classify different types of seeds based on their physical characteristics. The information required for this model includes a dataset with features such as area, perimeter, compactness, length of kernel, width of kernel, asymmetry coefficient, and length of kernel groove. The model predicts clusters of seeds, grouping them into distinct categories based on these features. This clustering analysis is useful for agricultural research and seed quality control, helping to identify and categorize different types of seeds, facilitating better management and selection processes. By understanding the natural groupings of seeds, researchers and farmers can make informed decisions to improve crop yields and quality.</p>
+                <img src="img/cluster_py1.png" alt="cluster_py1" class="forecast-image" style="width: 80%; height: 80%;">
+                <p><strong> Importance of the Visualizations:</strong></p>
+                <p><strong>Elbow Method Plot: </strong>Helps to select the optimal number of clusters, which is fundamental for effective clustering analysis. Without this plot, it would be difficult to determine the appropriate number of clusters for the data.</p>
+                <img src="img/elbow.png" alt="elbow" class="forecast-image" style="width: 80%; height: 80%;">
+                <p><strong>Pairplot:</strong> Provides an overview of the relationships between features and how classes are distributed in the feature space. This is crucial for understanding the data structure and how features may influence cluster formation.</p>
+                <img src="img/pairplot.png" alt="pairplot" class="matrix-image" style="width: 80%; height: 80%;">
+                <p><strong>Heatmap of the Correlation Matrix: </strong>Shows the relationships between features, helping to identify which features are highly correlated. This can be useful for feature selection and understanding how features may influence the clustering model.</p>
+                <img src="img/heatmap.png" alt="heatmap" class="matrix-image" style="width: 80%; height: 80%;">
+                <p>These visualizations provide a deep understanding of the data and the performance of the clustering model, allowing for informed decisions to improve the analysis and interpretation of the results.</p>
+                <img src="img/cluster_py2.png" alt="cluster_py2" class="forecast-image" style="width: 80%; height: 80%;">
+            </div>
+
+            <div id="python3" class="tab-content">
+                <h2>Prediction Model: Random Forest Classifier Airbnb</h2>
+                <p>This prediction model utilizes a Decision Tree Classifier and a Random Forest Classifier to predict the review score category of Airbnb listings based on various features. The information required for this model includes a dataset with features such as host response rate, host acceptance rate, whether the host is a superhost, the number of bathrooms, the number of beds, the price, the number of reviews, and other relevant attributes. The model predicts the review score category (low, medium, high) for each listing. This classification analysis is useful for Airbnb hosts and platform managers to understand the factors that influence review scores, enabling them to improve their listings and enhance guest satisfaction. By identifying key features that impact review scores, hosts can make data-driven decisions to optimize their offerings.</p>
+                <img src="img/randomf.png" alt="randomf" class="forecast-image" style="width: 80%; height: 80%;">
+                <p><strong>Accuracy:</strong></p>
+                <p>Random Forest accuracy: 0.702; A 70% accuracy in the Random Forest model indicates reasonable performance, correctly predicting review scores for most test instances. However, with 30% of predictions incorrect, improvements like hyperparameter tuning, feature engineering, or addressing class imbalances could enhance reliability and decision-making.</p>
+                <img src="img/feature.png" alt="feature" class="forecast-image" style="width: 80%; height: 80%;">
+            </div>
+            <div id="python4" class="tab-content">
+                <h2>Prediction Model: Airbnb Review Count Forecasting</h2>
+                <p>This prediction model utilizes the Seasonal Autoregressive Integrated Moving Average with Exogenous Regressors (SARIMAX) to forecast the monthly review counts for Airbnb listings. The information required for this model includes historical review data with timestamps, which are used to create a time series of review counts. The model predicts the number of reviews for the next 12 months, taking into account seasonal patterns and trends in the data. This forecasting analysis is useful for Airbnb hosts and platform managers to anticipate future review activity, enabling them to plan and allocate resources effectively. By understanding the expected review trends, hosts can optimize their strategies to enhance guest satisfaction and improve their listings' performance.</p>
+                <img src="img/foreairbnb.png" alt="foreairbnb" class="forecast-image" style="width: 80%; height: 80%;">
+                <p><strong>Statistical evaluation of the model:</strong></p>
+                <p>The code <code>result.plot_diagnostics(figsize=(12, 8))</code> generates and displays a set of diagnostic plots for evaluating the residuals of a fitted time series model, such as a SARIMA model. These plots typically include the standardized residuals plot, histogram with kernel density estimate (KDE), normal Q-Q plot, and correlogram (ACF plot). The purpose of these plots is to validate the model's assumptions, such as the normality and independence of residuals, and to assess the goodness-of-fit. By these analyzing plots, you can identify patterns or anomalies in the residuals, which can highlight areas where the model may need refinement or additional features, ensuring the model's reliability and accuracy.</p>
+                <img src="img/evaluation.png" alt="evaluation" class="matrix-image" style="width: 80%; height: 80%;">
+            </div>
+            <div id="python5" class="tab-content">
+                <h2>Sentiment Analysis with VADER and WordCloud (New York city)</h2>
+                <p>This model uses the VADER (Valence Aware Dictionary and sEntiment Reasoner) sentiment analyzer to classify user comments into three categories: positive, negative, and neutral. The required information for the model includes a dataset in CSV format containing a column of comments. The model predicts the sentiment polarity of each comment and generates word clouds (WordClouds) to visualize the most frequent words in positive and negative comments. This analysis is useful for better understanding user opinions about a product or service, allowing for the identification of areas for improvement and strengths.</p>
+                <p><strong>General:</strong></p>
+                <img src="img/cloud1.png" alt="cloud1" class="forecast-image" style="width: 80%; height: 80%;">
+                <p><strong>Positive:</strong></p>
+                <img src="img/cloud2.png" alt="cloud2" class="matrix-image" style="width: 80%; height: 80%;">
+                <p><strong>Negative:</strong></p>
+                <img src="img/cloud3.png" alt="cloud3" class="matrix-image" style="width: 80%; height: 80%;">
+            </div>
+        </div>
+        
+        <!-- Contenido de PBI -->
+        <div data-content id="PBI">
+            <div class="tabs">
+                <button class="tab-link" onclick="openTab(event, 'pbi1')">PROJECT 1</button>
+                <button class="tab-link" onclick="openTab(event, 'pbi2')">PROJECT 2</button>
+                <button class="tab-link" onclick="openTab(event, 'pbi3')">PROJECT 3</button>
+            </div>
+            <p><strong>Power BI</strong></p>
+            <div id="pbi1" class="tab-content">
+                <h2>Dashboard Description: TransCanada</h2>
+                <p>This dashboard provides an interactive and comprehensive overview of TransCanada's pipeline throughput and capacity data, segmented by year, direction of flow (east, south, north, and west), and trade type (export, import, intracanada). Key metrics, such as the average and total throughput in thousand cubic meters per day (m3/d), are visualized using clear gauges, trend lines, and performance indicators. The visualizations highlight a current throughput of 32.55K against a goal of 63.72K, offering valuable insights into the performance gap. Additionally, the dashboard allows users to drill down into data by specific years, flows, and trade types, supporting quick decision-making and analysis. The use of clean layouts, colors, and interactive elements ensures an intuitive user experience, making it a powerful tool for identifying trends, monitoring capacity utilization, and optimizing operational strategies.</p>
+                <div class="iframe-container">
+                    <iframe 
+                        title="Dashboard_tc_1" 
+                        width="850" 
+                        height="600" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiNjcyOGQyYjEtNmNkMy00YWJkLTg4YWItZDBjMGI5NGVlNTA2IiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                    </iframe>
+                </div>
+            </div>
+
+            <div id="pbi2" class="tab-content">
+                <h2>Dashboard Description: Evolution of Asylum Applications in Europe (2009-2018)</h2>
+                <p>This dashboard visualizes the annual evolution of asylum applications across European countries from 2009 to 2018. It employs an animated bar chart race to dynamically showcase changes in asylum numbers, highlighting leading countries such as France, the United Kingdom, and Germany. The georeferenced map complements this by displaying the spatial distribution of asylum seekers across Europe, with countries color-coded for easy comparison. These tools provide a compelling and interactive analysis of migration trends, enabling policymakers, researchers, and analysts to identify patterns and shifts over time. The combination of animation and geographic visualization enhances engagement and offers a comprehensive perspective on the data.</p>
+                <div class="iframe-container">
+                    <iframe 
+                        title="Asylum" 
+                        width="850" 
+                        height="600" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiY2VlMTcyNzUtYTYxNi00MTc2LWFkM2QtOGI5MDlkMjczZWEwIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                    </iframe>
+                </div>
+            </div>
+
+            <div id="pbi3" class="active">
+                <h2>Dashboard Description: Global Unicorn Companies Overview</h2>
+                <p>This dashboard provides a comprehensive analysis of the global distribution and trends of unicorn companies (startups valued at over $1 billion). It highlights the dominance of the United States, China, and India in creating such companies over the past two decades, with notable statistics like 543 unicorns originating from the U.S. and 164 from China. Interactive elements, such as year selection and progress-indicating figures, visually showcase country contributions and funding/valuation metrics. The use of colorful visual aids and percentage-based indicators simplifies data interpretation, making it a powerful tool for investors, analysts, and policymakers to identify growth trends and innovation hubs globally.</p>
+                
+                <p>The second page of the dashboard focuses on analyzing the sectors driving the creation of unicorn companies globally. It visualizes the distribution of unicorns across industries, highlighting which sectors have the highest representation and valuation. This allows stakeholders to identify key areas of innovation and investment opportunities. The use of dynamic charts and color-coded sectors enhances understanding by making patterns and trends easily recognizable. This detailed breakdown provides valuable insights for entrepreneurs, investors, and policymakers looking to align their strategies with high-growth industries.</p>
+                
+                <p>The third page of the dashboard delves into detailed profiles of individual unicorn companies, offering insights into their founding year, industry, valuation, funding stages, and key market regions. Each company is represented with an interactive element that allows users to explore their growth trajectory, business model, and notable achievements. This page enables users to gain a deeper understanding of the most successful unicorns globally, providing a basis for comparative analysis across companies. By showcasing key performance indicators and highlighting the innovative aspects of these startups, this section serves as a valuable resource for investors and entrepreneurs looking to replicate or partner with successful unicorn ventures.</p>
+                <div class="iframe-container">
+                    <iframe 
+                        title="Unicorn" 
+                        width="850" 
+                        height="600" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiM2Y2NjNlNmYtODhlZS00NDdmLTlkMjMtMTcxNmQ0OTI1ZmJjIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenido de CANVA -->
+        <div data-content id="CANVA">
+            <div class="tabs">
+                <button class="tab-link" onclick="openTab(event, 'canva1')">PROJECT 1</button>
+                <button class="tab-link" onclick="openTab(event, 'canva2')">PROJECT 2</button>
+                <button class="tab-link" onclick="openTab(event, 'canva3')">PROJECT 3</button>
+            </div>
+            <p>Using the tool "Canva," corporate designs for various documents were developed, including informational brochures, the strategic plan, and a handbook. All these documents were created for Peace Hills Utilities Inc., based in the city of Wetaskiwin. As the focus is on showcasing the design rather than the content, certain pages have been concealed to respect potential confidentiality.</p>
+            <div id="canva1" class="tab-content">
+                <h2>Call for Applications Brochure</h2>
+                                
+                <!-- Canva Embed -->
+                <div style="position: relative; width: 100%; height: 0; padding-top: 83.8298%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                    src="https://www.canva.com/design/DAGX4fvGbJY/9NIYKCPU8g8lnmYv1XqeBw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                  </iframe>
+                </div>
+            </div>
+
+            <div id="canva2" class="tab-content">
+                <h2>Business Plan 2025</h2>
+                <!-- Canva Embed -->
+                <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https://www.canva.com/design/DAGZ7W5weIY/zMHolQDfAXCfno4ACzJ71A/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                  </iframe>
+                </div>
+            </div>
+
+            <div id="canva3" class="tab-content">
+                <h2>Handbook 2025</h2>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                      src="https://www.canva.com/design/DAGZ7fmaVsY/CaVjWczkB3EG7SC-Hrb3fQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p><strong>© 2024-2025 Francisco Tolosa's Portfolio</strong></p>
+    </footer>
+
+    <!-- Scripts -->
+        <script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+  </body>
+</html>
