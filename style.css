@@ -1,0 +1,891 @@
+:root {
+    /* COLORES */
+    --whiteColor: #ffffff;
+    --whiteColor-70: #ffffffb3;
+    --greyColor: #494949;
+    --whiteColor: rgba(255, 255, 255, 0.886);
+    --redColor: rgba(255, 38, 0, 0.909);    
+    --blueColor: rgba(0, 128, 255, 0.909);
+    --darkblueColor: rgb(8, 126, 244);
+
+    --buttonSocialColor: #222222;
+    --buttonSocialColor__hover: rgba(54, 54, 54, 0.297);
+  
+    /* TAMAÑO DE TEXTO */
+    --level__textSize: clamp(14px, 4vw, 22px);
+    --principalTitleSize: clamp(1.8rem, 6vw, 3rem);
+    --principalParagraphSize: clamp(1rem, 3vw, 1.3rem);
+  
+    --a_SectionTitleSize: clamp(1.9rem, 6vw, 2.3rem);
+    --b_ExperienciaTitleSize: clamp(1.3rem, 5vw, 1.9rem);
+    --c_ExperienceParagraphSixe: clamp(1.3rem, 4vw, 1.4rem);
+    --d_ExperienceParagraphSixe: clamp(1.0rem, 3vw, 1.1rem);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    background: #d3d3d3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #d3d3d3, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #ebeaea, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: system-ui;
+}
+
+footer {
+    position: relative; /* Cambia la posición a relativa */
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px 0;
+    font-size: var(--c_ExperienceParagraphSixe);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que el footer esté por encima del contenido */
+    margin-top: 200px; /* Agrega un margen superior de 200px */
+}
+
+main {
+    margin-bottom: 60px; /* Ajusta este valor según sea necesario para evitar superposición con el footer */
+}
+
+.HOME {
+    padding: 40px; /* Espaciado interno de 40 píxeles */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    margin: 0 auto 10px auto; /* Centrar horizontalmente y ajustar el margen inferior */
+    max-width: 900px;
+}
+
+.HOME svg {
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadir transición */
+}
+
+.HOME:hover svg {
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3)); /* Ajusta los valores según sea necesario */
+    transform: scale(1.1);
+}
+
+.MENU {
+    padding: 40px; /* Espaciado interno de 40 píxeles */
+    display: flex; /* Diseño flexbox */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    gap: 30px;
+    font-size: var(--level__textSize); /* Tamaño de fuente dinámico */
+    font-weight: 600; /* Negrita */
+    margin: 0 auto 50px auto; /* Centrar horizontalmente y ajustar el margen inferior */
+    max-width: 900px; /* Ancho máximo de 900px */
+}
+    /* para que cada boton del menu vaya a la derecha */
+.MENU p {
+    color: var(--greyColor);
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: inline-block; /* Asegura que el elemento se ajuste al tamaño del contenido */
+    transform-origin: center; /* Centra el punto de transformación */
+}
+    
+.MENU p:hover {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Ajusta los valores según sea necesario */
+    transform: scale(1.1);
+}
+    
+.MENU p[data-target="#ABOUTME"]:hover {
+    color: var(--redColor); /* Cambia a tu color deseado */
+}
+    
+.MENU p[data-target="#RESUME"]:hover {
+    color: var(--whiteColor); /* Cambia a tu color deseado */
+    text-shadow: 
+        -1px -1px 2px #888686,  
+         1px -1px 2px #888686,
+        -1px  1px 2px #888686,
+         1px  1px 2px #888686, /* Contorno negro suavizado */
+         10px 10px 10px rgba(0, 0, 0, 0.3); /* Sombra existente */
+}
+    
+.MENU p[data-target="#PROJECTS"]:hover {
+    color: var(--blueColor); /* Cambia a tu color deseado */
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .MENU {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos verticalmente */
+        gap: 10px; /* Reducir el espacio entre elementos */
+        padding: 20px; /* Reducir el espaciado interno */
+    }
+
+    .MENU p {
+        margin-right: 0; /* Eliminar margen derecho */
+        margin-bottom: 10px; /* Agregar margen inferior */
+    }
+
+    .HOME {
+        margin-top: 20px; /* Ajustar el margen superior */
+        transform: translate(0, 0); /* Restablecer la posición */
+    }
+
+    .HOME svg {
+        width: 30px; /* Ajustar el tamaño del icono */
+        height: 30px; /* Ajustar el tamaño del icono */
+    }
+}
+.CONTENT {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.CONTENT img {
+    
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.Img_profile {
+    object-fit: cover;
+}
+
+.CONTENT img:hover {
+    transform: scale(1.2); /* Aumentar la escala a 1.5 */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Añadir sombra */
+}
+.Img_profile {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.CONTENT h1 {
+    font-size: var(--principalTitleSize);
+    color: var(--greyColor);
+}
+
+.CONTENT h2 {
+    font-size: var(--b_ExperienciaTitleSize);
+    color: var(--greyColor);
+    margin-bottom: 20px;
+}
+
+.CONTENT h3 {
+    color: var(--greyColor);
+    font-weight: 400; /* Adelgaza la letra */
+}
+
+.CONTENT p {
+    color: var(--greyColor);
+    font-size: var(--c_ExperienceParagraphSixe);
+    margin: 20px 0;
+    text-align: justify; /* Justifica el texto */
+}
+
+.CONTENT li {
+    margin-bottom: 10px;
+    font-size: var(--d_ExperienceParagraphSixe);
+    color: var(--greyColor);
+}
+
+.CONTENT ul {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+.CONTENT ul a {
+    background-color: var(--buttonSocialColor);
+    color: var(--whiteColor);
+    padding: 7px 25px;
+    margin-right: 2rem;
+    border-radius: 30px;
+    display: inline-block;
+    align-items: center;
+    gap: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+/* Estilos para el código en línea */
+.CONTENT code {
+    background-color: rgb(215, 219, 222);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.CONTENT ul a:hover {
+    background-color: lightslategray; /* Color de hover */
+    transform: scale(1.1);
+    font-weight: 600;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bi {
+    margin-right: 8px;
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .CONTENT ul a {
+        padding: 5px 15px; /* Ajustar el padding para pantallas pequeñas */
+        margin-right: 1rem; /* Reducir el margen derecho */
+        font-size: 0.9rem; /* Ajustar el tamaño de la fuente */
+        border-radius: 20px; /* Ajustar el radio del borde */
+    }
+}
+.contact-tab {
+    background-color: #f1f1f1;
+    padding: 5px; /* Reduce el espacio interno */
+    margin: 5px auto; /* Ajusta el margen superior e inferior */
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1); /* Reduce la sombra */
+    max-width: 400px; /* Limita el ancho del tab */
+    display: none; /* Sigue oculto por defecto */
+    transition: all 0.4s ease;
+    
+}
+
+  #toggle-contact:checked ~ .contact-tab {
+    display: block;
+  }
+
+/* para mantener el contenido de cada boton oculto */
+[data-content] {
+    display: none;
+}
+.active[data-content] {
+    display: block;
+}
+
+/* --------- TIMELINE------------------*/
+
+.timeline-title {
+    margin-top: 50px;
+    text-align: center;  /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 24px;     /* Ajusta el tamaño de fuente según tus necesidades */
+    font-weight: bold;   /* Estilo de texto en negrita, opcional */
+}
+
+
+.timeline{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    height: auto; 
+    overflow: visible;
+    margin-bottom: 80px;  
+}
+
+.container_tl{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container_tl:nth-child(1){
+    animation-delay: 0s;
+}
+.container_tl:nth-child(2){
+    animation-delay: 0.5s;
+}
+.container_tl:nth-child(3){
+    animation-delay: 1s;
+}
+.container_tl:nth-child(4){
+    animation-delay: 1.5s;
+}
+.container_tl:nth-child(5){
+    animation-delay: 2s;
+}
+.container_tl:nth-child(6){
+    animation-delay: 2.5s;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background: white;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    left: 50%;
+    transform: translateX(-50%); /* Para centrar la caja de texto en la mitad */
+    position: relative;
+}
+
+.company-img {
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: -60%;
+    top: 60px;
+    z-index: 10;
+    object-fit: contain; /* Ajusta la imagen para que se vea completa */
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.left img, .right img {
+    width: 50px; /* Tamaño reducido */
+    height: 50px; /* Tamaño reducido */
+}
+.right img{
+    left: -25px;
+}
+
+.left img{
+    right: -25px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.3);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 3s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.text-box h2 {
+    font-size: clamp(0.1rem, 3vw, 1.3rem);
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: var(--d_ExperienceParagraphSixe);
+}
+
+.left-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+}
+.right-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+        padding: 0 10px; /* Ajustamos el padding para que el contenido no se salga de los márgenes */
+    }
+
+    .timeline::after {
+        left: 31px; /* Ajustamos la línea del timeline si es necesario */
+    }
+
+    .container_tl {
+        width: 100%;
+        padding-left: 20px; /* Reducimos el padding para ajustar en móviles */
+        padding-right: 20px;
+    }
+
+    .text-box {
+        font-size: 12px; /* Reducimos el tamaño de la fuente para móviles */
+        word-wrap: break-word; /* Aseguramos que el texto no se salga del cuadro */
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right {
+        left: 20px; /* Alineamos a la derecha los cuadros */
+    }
+    .left {
+        left: 20px; /* Alineamos a la derecha los cuadros */
+    }
+
+    .left-arrow {
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 50px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid white;
+        left: -15px;
+        border-left: 0;
+    }
+    
+
+    .left img, .right img {
+        left: 0px; /* Ajustamos las imágenes para móviles */
+        max-width: 100px; /* Limita el tamaño de las imágenes en móviles */
+    }
+
+    /* Alineamos todos los cuadros a la derecha para móviles */
+    .container_tl {
+        text-align: right;
+    }
+
+    .text-box {
+        margin-right: 0; /* Aseguramos que el margen esté alineado correctamente */
+    }
+    
+    /* Ajustamos el tamaño de la letra de los títulos y el contenido */
+    .text-box h2 {
+        font-size: 16px; /* Ajustamos el tamaño del título */
+    }
+
+    .text-box p, .text-box small {
+        font-size: 12px; /* Ajustamos el tamaño del resto del texto */
+    }
+}
+
+/* ---------ABOUT ME------------------*/
+
+.grid-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    gap: 20px; /* Espacio de 20px entre cada cuadro */
+    padding: 10px;
+    align-items: center; /* Centra los cuadros horizontalmente */
+}
+
+.content-box {
+    background-color: #f9f9f9; /* Color de fondo del cuadro */
+    border: 1px solid #ddd; /* Borde del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 850px; /* Ancho del cuadro */
+    height: 100px; /* Alto del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+    position: relative; /* Asegura que el cuadro se posicione correctamente dentro del contenedor */
+    z-index: 1; /* Nivel de apilamiento inicial */
+    /* display: flex; */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    border: none; /* Elimina el borde del botón por defecto */
+    padding: 0; /* Elimina el padding del botón por defecto */
+}
+
+.content-box h2 {
+    margin: 35px; /* Elimina los márgenes del título */
+    font-size: var(--c_ExperienceParagraphSixe);
+    /* display: flex; */
+    color: var(--greyColor);
+    /* justify-content: center; Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    /* width: 100%; Asegura que el título ocupe todo el ancho del cuadro */
+    transition: color 0.3s; /* Añade una transición suave al color del texto */
+}
+
+.content-box p {
+    margin-bottom: 0; /* Elimina el margen inferior del párrafo */
+    opacity: 0; /* Oculta el párrafo inicialmente */
+    transition: opacity 0.3s;
+    color: var(--greyColor);
+}
+
+.content-box.expand {
+    transform: scale(1.1); /* Aumenta el tamaño del cuadro al hacer click */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer click */
+    height: auto; /* Permite que el contenido se expanda */
+    padding: 40px; /* Aumenta el padding para dar más espacio al contenido */
+    /* position: absolute; Posiciona el cuadro sobre los otros elementos */
+    z-index: 10; /* Asegura que el cuadro se superponga a los demás */
+    background-color: var(--greyColor); /* Color de fondo sólido al expandirse */
+}
+
+.content-box.expand h2,
+.content-box.expand p {
+    color: #fff; /* Cambia el color del texto a blanco al expandirse */
+}
+
+.content-box.expand p {
+    opacity: 1; /* Muestra el párrafo al hacer click */
+}
+
+/* Hover colors */
+.content-box:nth-child(1):hover {
+    background-color: rgba(66, 139, 202, 1); /* Color azul con 50% de transparencia */
+}
+
+.content-box:nth-child(2):hover {
+    background-color: rgba(217, 83, 79, 1); /* Color rojo con 50% de transparencia */
+}
+
+.content-box:nth-child(3):hover {
+    background-color: rgba(92, 184, 92, 1); /* Color verde con 50% de transparencia */
+}
+
+.content-box:nth-child(4):hover {
+    background-color: rgba(240, 173, 78, 1); /* Color naranja con 50% de transparencia */
+}
+
+.content-box:nth-child(5):hover {
+    background-color: rgba(91, 192, 222, 1); /* Color cian con 50% de transparencia */
+}
+
+/* Hover effect for all boxes */
+.content-box:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del cuadro al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .content-box {
+        width: 700px; /* Ajusta el ancho del cuadro para pantallas medianas */
+    }
+    .content-box h2 {
+        font-size: 1.1em; /* Ajusta el tamaño de la fuente del título para pantallas medianas */
+        margin: 20px; /* Ajusta el margen del título para pantallas medianas */
+    }
+    .content-box p {
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente del párrafo para pantallas medianas */
+    }
+}
+
+@media (max-width: 992px) {
+    .content-box {
+        width: 600px; /* Ajusta el ancho del cuadro para pantallas pequeñas */
+    }
+    .content-box h2 {
+        font-size: 1em; /* Ajusta el tamaño de la fuente del título para pantallas pequeñas */
+        margin: 15px; /* Ajusta el margen del título para pantallas pequeñas */
+    }
+    .content-box p {
+        font-size: 0.85em; /* Ajusta el tamaño de la fuente del párrafo para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        width: 100%; /* Ajusta el ancho del cuadro para pantallas muy pequeñas */
+    }
+    .content-box h2 {
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente del título para pantallas muy pequeñas */
+        margin: 10px; /* Ajusta el margen del título para pantallas muy pequeñas */
+    }
+    .content-box p {
+        font-size: 0.8em; /* Ajusta el tamaño de la fuente del párrafo para pantallas muy pequeñas */
+    }
+}
+
+
+/* ---------Table------------------*/
+.table-container {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow:  4px 8px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #428bca;
+    color: white;
+}
+tr:hover {
+    background-color: #dbdada;
+}
+
+
+
+/* ---------PROGRESS BARS PERSONALITY------------------*/
+.progress-container {
+    max-width: 900px;
+    margin: 50px auto; /* Margen superior de 50px y centrado horizontal */
+    padding: 40px; /* Opcional: agrega un poco de espacio interno */
+    /* text-align: center; Centra el contenido interno */
+}
+
+h2 {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.trait {
+    margin-bottom: 25px;
+    text-align: center;
+    transition: 1s; /* Añade una transición suave */
+}
+
+.trait:hover {
+    transform: scale(1.2); /* Aumenta la escala al pasar el ratón */
+}
+.trait p {
+    margin-bottom: 5px; /* Ajusta este valor según sea necesario */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.progress-labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los textos en los extremos */
+    margin-bottom: 5px; /* Ajusta según el espacio que quieras debajo */
+}
+
+.label-left, .label-right {
+    font-size: 18px;
+    color: #666; /* Cambia el color y tamaño de los textos a tu gusto */
+    width: 80px; /* Ancho para mantener espacio entre el texto y la barra */
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Color del fondo de la barra */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    flex-grow: 1; /* Hace que la barra ocupe el espacio entre los textos */
+    margin: 0 20px; /* Espacio entre los textos y la barra */
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.extraverted {
+    background-color: #5bc0de; /* Color para Extraverted */
+}
+
+.intuitive {
+    background-color: #f0ad4e; /* Color para Intuitive */
+}
+
+.thinking {
+    background-color: #5cb85c; /* Color para Thinking */
+}
+
+.judging {
+    background-color: #d9534f; /* Color para Judging */
+}
+
+.assertive {
+    background-color: #428bca; /* Color para Assertive */
+}
+
+/* -----------RESUME----------- */
+.CV {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0; /* Margen superior e inferior */
+}
+
+.CV iframe {
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* --------- PROJECTS------------------*/
+
+
+.PROJECTS {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Ajusta el margen entre los proyectos */
+    justify-content: center;
+    margin-top: 100px; /* Aumenta el margen superior según sea necesario */
+}
+
+.PROJECTS img {
+    border-radius: 50%;
+}
+
+.PROJECTS > div {
+    background-color: #f9f9f9; /* Fondo blanco claro */
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(50% - 20px); /* Ajusta el ancho para mostrar 2 en 2 */
+    box-sizing: border-box;
+    text-align: center; /* Centrar el contenido dentro de cada proyecto */
+}
+
+.PROJECTS > div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .PROJECTS > div {
+        width: 100%; /* Ocupa el 100% del ancho del contenedor en pantallas pequeñas */
+    }
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    font-size: var(--c_ExperienceParagraphSixe);
+}
+
+.tab-link {
+    background-color: #f1f1f1;
+    color: var(--greyColor);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra para dar volumen */
+}
+
+.tab-link:hover {
+    background-color: #ddd;
+    transform: scale(1.05); /* Aumentar ligeramente la escala */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Añadir sombra más pronunciada */
+}
+
+.tab-link.active {
+    background-color: #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadir sombra interna */
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.map-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.map-image {
+    width: 100%;
+    border: none;
+    clip-path: inset(0 0 0 1px);
+}
+
+.tree-image {
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    width: 100%;
+    max-width: 700px; /* Ancho máximo de 900px */
+    height: 400px; /* Altura fija de 400px */
+    background-color: #fff; /* Fondo blanco */
+    border: none; /* Elimina cualquier borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: contain; /* Asegura que toda la imagen se ajuste dentro del contenedor */
+    margin: 40px auto; /* Centra la imagen horizontalmente */
+}
+
+.forecast-image {
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    width: 100%;
+    max-width: 700px; /* Ancho máximo de 900px */
+    height: 400px; /* Altura fija de 400px */
+    background-color: #fff; /* Fondo blanco */
+    border: none; /* Elimina cualquier borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: contain; /* Asegura que toda la imagen se ajuste dentro del contenedor */
+    margin: 40px auto; /* Centra la imagen horizontalmente */
+}
+
+.timeserie-image {
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    width: 100%;
+    max-width: 700px; /* Ancho máximo de 900px */
+    height: 400px; /* Altura fija de 400px */
+    background-color: #fff; /* Fondo blanco */
+    border: none; /* Elimina cualquier borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: contain; /* Asegura que toda la imagen se ajuste dentro del contenedor */
+    margin: 40px auto; /* Centra la imagen horizontalmente */
+}
+
+.matrix-image {
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    width: 100%;
+    max-width: 700px; /* Ancho máximo de 900px */
+    height: 700px; /* Altura fija de 400px */
+    background-color: #fff; /* Fondo blanco */
+    border: none; /* Elimina cualquier borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: contain; /* Asegura que toda la imagen se ajuste dentro del contenedor */
+    margin: 40px auto; /* Centra la imagen horizontalmente */
+}
+
+.iframe-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+}
