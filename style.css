@@ -27,6 +27,13 @@
     box-sizing: border-box;
 }
 
+cite {
+    color: #666;
+    margin-top: 0px;
+    display: block;
+    text-align: center; /* Alinea la cita a la derecha */
+    margin-top: -90px; /* Ajusta el margen superior para pegarla al contenido superior */
+}
 body {
     min-height: 100dvh;
     background: #d3d3d3; /* fallback for old browsers */
